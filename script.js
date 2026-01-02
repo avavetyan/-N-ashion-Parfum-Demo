@@ -243,7 +243,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
     const langBtns = document.querySelectorAll('.lang-btn');
 
     // Check saved language
