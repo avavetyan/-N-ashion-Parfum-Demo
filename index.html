@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">N'ashion | Custom Personality Perfume</title>
+    <meta name="description"
+        content="N'ashion - One bottle, one personality. Creating unique perfumes based on your individual character."
+        data-i18n="meta_description">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="new_favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="glass-header">
+        <nav>
+            <div class="logo">N'ASHION</div>
+            <ul class="nav-links">
+                <li><a href="#philosophy" data-i18n="nav_philosophy">Philosophy</a></li>
+                <li><a href="#process" data-i18n="nav_creation">The Creation</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <span class="lang-divider">|</span>
+                <button id="lang-hy" class="lang-btn">HY</button>
+                <span class="lang-divider">|</span>
+                <button id="lang-ru" class="lang-btn">RU</button>
+            </div>
+        </nav>
+    </header>
+
+    <div id="chat-widget" class="chat-widget">
+        <!-- Chat Button -->
+        <button id="chat-btn" class="chat-btn">
+            <span class="icon">💬</span>
+            <span class="notification-dot"></span>
+        </button>
+
+        <!-- Chat Window -->
+        <div id="chat-window" class="chat-window hidden">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <span class="logo-icon">N</span>
+                    <span data-i18n="chat_title">N'ashion Assistant</span>
+                </div>
+                <button id="close-chat" class="close-chat">&times;</button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <!-- Messages will be added here dynamically -->
+                <div class="message bot">
+                    <p data-i18n="chat_welcome">Hello! How can I assist you in finding your perfect scent today?</p>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <div id="faq-options" class="faq-options">
+                    <!-- FAQ buttons will be injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-bg">
+                <img src="n_parfum.png" alt="Luxury Nashion Perfume Bottle">
+                <div class="overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="fade-in-up" data-i18n="hero_title">One Bottle, <br><span class="accent-text">Endless
+                        Luxury</span></h1>
+                <p class="subtitle fade-in-up delay-1" data-i18n="hero_subtitle">Tired of identical perfumes? Let's
+                    create your unique scent.</p>
+                <a href="#contact" class="cta-button fade-in-up delay-2" data-i18n="hero_cta">Discover Your Scent</a>
+            </div>
+        </section>
+
+        <section id="philosophy" class="section dark-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="philosophy_title">The Philosophy</h2>
+                    <div class="gold-line"></div>
+                </div>
+                <div class="philosophy-content">
+                    <p data-i18n="philosophy_text_1">At N'ashion, we believe that true luxury is individuality. A scent
+                        shouldn't just be a smell; it
+                        should be an extension of your soul, a whisper of your personality.</p>
+                    <p class="highlight-quote" data-i18n="philosophy_quote">"One bottle, one personality."</p>
+                    <p data-i18n="philosophy_text_2">We step away from mass production to craft a fragrance that is
+                        exclusively yours.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="section gradient-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="process_title">The Creation Process</h2>
+                    <div class="gold-line"></div>
+                </div>
+                <div class="cards-grid">
+                    <div class="card glass-card">
+                        <div class="card-number">01</div>
+                        <h3 data-i18n="process_step_1_title">The Consultation</h3>
+                        <p data-i18n="process_step_1_text">We begin with a conversation. We explore your character, your
+                            memories, and your desires to
+                            understand the essence of you.</p>
+                    </div>
+                    <div class="card glass-card">
+                        <div class="card-number">02</div>
+                        <h3 data-i18n="process_step_2_title">The Composition</h3>
+                        <p data-i18n="process_step_2_text">Our master perfumers select rare notes and accords, blending
+                            them into a harmony that
+                            resonates with your unique vibration.</p>
+                    </div>
+                    <div class="card glass-card">
+                        <div class="card-number">03</div>
+                        <h3 data-i18n="process_step_3_title">The Reveal</h3>
+                        <p data-i18n="process_step_3_text">Your signature scent is bottled in our premium glass flacons,
+                            ready to become your invisible
+                            signature.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section dark-section contact-section">
+            <div class="container">
+                <div class="contact-box glass-card">
+                    <h2 data-i18n="contact_title">Begin Your Journey</h2>
+                    <p data-i18n="contact_subtitle">Ready to find the scent that defines you?</p>
+                    <div class="contact-details">
+                        <a href="tel:+37493466499" class="contact-link phone">
+                            <span>📞</span> +374 93 46 64 99
+                        </a>
+                        <a href="mailto:nashion54@gmail.com" class="contact-link email">
+                            <span>📧</span> nashion54@gmail.com
+                        </a>
+                        <a href="https://www.instagram.com/nashion.yvn/" target="_blank" class="contact-link instagram">
+                            <span>📸</span> @nashion.yvn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footer_text">&copy; 2026 N'ashion Perfume. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
