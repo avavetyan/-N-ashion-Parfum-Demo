@@ -27,11 +27,33 @@
                 <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
             </ul>
             <div class="lang-switcher">
-                <button id="lang-en" class="lang-btn active">EN</button>
+                <button id="lang-en" class="lang-btn active" title="English" aria-label="Switch to English">
+                    <svg class="flag-icon" viewBox="0 0 640 480">
+                        <path fill="#012169" d="M0 0h640v480H0z" />
+                        <path fill="#FFF"
+                            d="m75 0 244 181L562 0h78v62L400 240l240 178v62h-78L320 300 77 480H0v-62l240-178L0 62V0h75zm565 0L320 259 35 0h59L320 213 543 0h97zM0 480l285-213 35 26L35 480H0zm640 0L355 267l35-26L640 480z" />
+                        <path fill="#C8102E"
+                            d="m424 281 216 159v40L369 281h55zm-184 20 6 35L54 480H0l240-179zM640 0v3L391 190l-6-35L585 0h55zM0 0l250 186-35 26L0 40V0z" />
+                        <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z" />
+                        <path fill="#C8102E" d="M281 0v480h80V0h-80zM0 200v80h640v-80H0z" />
+                    </svg>
+                </button>
                 <span class="lang-divider">|</span>
-                <button id="lang-hy" class="lang-btn">HY</button>
+                <button id="lang-hy" class="lang-btn" title="Armenian" aria-label="Switch to Armenian">
+                    <svg class="flag-icon" viewBox="0 0 640 480">
+                        <rect width="640" height="160" fill="#ff4b44" />
+                        <rect width="640" height="160" y="160" fill="#0033a0" />
+                        <rect width="640" height="160" y="320" fill="#f2a800" />
+                    </svg>
+                </button>
                 <span class="lang-divider">|</span>
-                <button id="lang-ru" class="lang-btn">RU</button>
+                <button id="lang-ru" class="lang-btn" title="Russian" aria-label="Switch to Russian">
+                    <svg class="flag-icon" viewBox="0 0 640 480">
+                        <rect width="640" height="160" fill="#fff" />
+                        <rect width="640" height="160" y="160" fill="#0039a6" />
+                        <rect width="640" height="160" y="320" fill="#d52b1e" />
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
@@ -157,4 +179,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

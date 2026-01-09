@@ -118,14 +118,31 @@ nav {
     font-family: var(--font-body);
     font-size: 0.9rem;
     color: var(--text-muted);
-    padding: 0;
-    transition: color 0.3s ease;
+    padding: 2px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
 }
 
-.lang-btn:hover,
+.flag-icon {
+    width: 24px;
+    height: auto;
+    border-radius: 1px;
+    filter: grayscale(80%) opacity(0.7);
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover .flag-icon,
+.lang-btn.active .flag-icon {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.1);
+}
+
 .lang-btn.active {
-    color: var(--accent-light);
-    font-weight: 500;
+    outline: 1px solid var(--accent-light);
+    outline-offset: 2px;
 }
 
 .lang-divider {
